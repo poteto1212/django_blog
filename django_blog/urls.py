@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 
+#pathの''が空欄・・・追加URL無しで指定したテンプレートの表示ができる
 #path('',include('blogs.url'))でサーバー起動時に自動的にblogs.urlファイルに飛ぶように
 #している
 urlpatterns = [

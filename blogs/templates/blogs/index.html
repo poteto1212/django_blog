@@ -1,2 +1,7 @@
 <h1>ブログサイト</h1>
 <p>ここはトップページです</p>
+<!-- views.pyの関数やクラスで指定した変数を取り出すときは{{変数}} -->
+{% for blog in blogs%}
+    {{blog.title}}
+    {{blog.text}}
+{% endfor %}
