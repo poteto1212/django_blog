@@ -13,3 +13,11 @@ def index(request):
     
 #render(,,{'':})の{'',}部分の引数は{'キー'：HTMLに渡す変数}
 #pythonの辞書型文法のルールに従って書くこと
+
+
+#htmlに特定idのblogモデルを与える
+def detail(request,blog_id):
+    blog=Blog.objects.get(id=blog_id)
+    return render(request,'blogs/detail.html',{'blog':blog})
+    
+    
